@@ -1,0 +1,38 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    ext.kotlin_version = '1.3.50'
+    repositories {
+        google()
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.5.1'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        /// Since the example app needs to know how to compile each dependency of the library,
+        /// It will need to know where the local maven Repository is, where the Flutter Core is located
+        maven {
+            url '../../sweetly_core/build/host/outputs/repo'
+            // This is relative to the location of the build.gradle file
+            // if using a relative path.
+        }
+        maven {
+            url 'http://download.flutter.io'
+        }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

@@ -1,0 +1,16 @@
+PODS:
+  - sweetly_ios_embedding (0.1.0)
+
+DEPENDENCIES:
+  - sweetly_ios_embedding (from `../`)
+
+EXTERNAL SOURCES:
+  sweetly_ios_embedding:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  sweetly_ios_embedding: bba93461a2a65ad6870039b68957bc8d3e3bda8d
+
+PODFILE CHECKSUM: 2e7d0655e71f2ddde96e23bfc8a417a660ce0dba
+
+COCOAPODS: 1.7.1

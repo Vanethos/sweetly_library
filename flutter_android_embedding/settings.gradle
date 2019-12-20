@@ -1,0 +1,2 @@
+include ':app', ':flutter_android_embedding'
+rootProject.name='Flutter Android Embedding'

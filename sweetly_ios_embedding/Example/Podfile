@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'sweetly_ios_embedding_Example' do
+  pod 'sweetly_ios_embedding', :path => '../'
+
+  target 'sweetly_ios_embedding_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
