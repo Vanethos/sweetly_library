@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  sweetly_ios_embedding: bba93461a2a65ad6870039b68957bc8d3e3bda8d
+  sweetly_ios_embedding: 653bf1d7ec3fceac0d31f2c93a1c2eadef03fc7f
 
 PODFILE CHECKSUM: 2e7d0655e71f2ddde96e23bfc8a417a660ce0dba
 

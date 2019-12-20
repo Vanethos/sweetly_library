@@ -32,6 +32,8 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'sweetly_ios_embedding/Classes/**/*'
   
+  s.vendored_frameworks = 'Flutter/App.framework', 'Flutter/Flutter.framework'
+  
   # s.resource_bundles = {
   #   'sweetly_ios_embedding' => ['sweetly_ios_embedding/Assets/*.png']
   # }
