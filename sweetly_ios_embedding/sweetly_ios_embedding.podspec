@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'sweetly_ios_embedding'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of sweetly_ios_embedding.'
+  s.version          = '0.0.1'
+  s.summary          = 'Ios Library developed using Flutter'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,21 +18,45 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+A library that was made using Flutter's Add-to-App feature
                        DESC
 
-  s.homepage         = 'https://github.com/vanethos/sweetly_ios_embedding'
+  s.homepage         = 'https://github.com/vanethos/sweetly_library'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  s.license          = { :type => 'MIT', :text => 'MIT License
+
+  Copyright (c) 2020 Gonçalo Montes Palma
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to deal
+  in the Software without restriction, including without limitation the rights
+  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in all
+  copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+  SOFTWARE.' }
   s.author           = { 'vanethos' => 'solid.goncalo@gmail.com' }
-  s.source           = { :git => 'https://github.com/vanethos/sweetly_ios_embedding.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => 'https://github.com/Vanethos/sweetly_library.git', :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/gonpalma'
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'sweetly_ios_embedding/Classes/**/*'
+  s.source_files = 'sweetly_ios_embedding/sweetly_ios_embedding/Classes/**/*'
   
-  s.vendored_frameworks = 'Flutter/App.framework', 'Flutter/Flutter.framework'
+  s.vendored_frameworks = 'sweetly_ios_embedding/Flutter/App.framework', 'sweetly_ios_embedding/Flutter/Flutter.framework'
+  s.preserve_paths = 'sweetly_ios_embedding/Flutter/*.framework'
+  
+  s.swift_versions = ['5.0']
+
   
   # s.resource_bundles = {
   #   'sweetly_ios_embedding' => ['sweetly_ios_embedding/Assets/*.png']
