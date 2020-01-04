@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'sweetly_ios_embedding'
-  s.version          = '0.0.3'
+  s.version          = '0.0.4'
   s.summary          = 'Ios Library developed using Flutter'
 
 # This description is used to generate tags and improve search results.
@@ -52,7 +52,9 @@ A library that was made using Flutter's Add-to-App feature
 
   s.source_files = 'sweetly_ios_embedding/sweetly_ios_embedding/Classes/**/*'
   
-  s.vendored_frameworks = 'sweetly_ios_embedding/Flutter/App.framework', 'sweetly_ios_embedding/Flutter/Flutter.framework'
+  s.dependency 'Flutter'
+  
+  s.vendored_frameworks = 'sweetly_ios_embedding/Flutter/App.framework'
   s.preserve_paths = 'sweetly_ios_embedding/Flutter/*.framework'
   
   s.swift_versions = ['5.0']
